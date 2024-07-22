@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer the below question</title>
+    <style>
+        .container{
+            margin-top: 40px;
+            background-color: antiquewhite;
+            width: 600px;
+            margin-left: 300px;
+            padding: 10px 40px 40px 30px;
+        }
+        .red, .green{
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: rgba(255, 0, 0, 0.753);
+            color: white;
+            border-color: rgba(255, 0, 0, 0.685);
+        }
+        .option{
+            padding: 10px 380px 10px 5px;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            border-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>In web design, what does CSS stand for?</h1>
+        </div>
+        <div>
+            <div>
+                <button class="red">A</button>
+                <button class="option" onclick="red()">Counter Strike:Source</button>
+            </div>
+            <div>
+                <button class="red">B</button>
+                <button class="option" onclick="red()">Corrective Style Sheet</button>
+            </div>
+            <div>
+                <button class="red" onclick="red()">C</button>
+                <button class="option" onclick="red()"> Computer Style Sheet</button>
+            </div>
+            <div>
+                <button class="green">D</button>
+                <button class="option" onclick="green()">Cascading Style Sheet</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function red(){
+            document.getElementsByClassName("option")[0].style.backgroundColor="rgba(255, 0, 0, 0.753)";
+        }
+        function green(){
+            document.getElementsByClassName("option")[3].style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>

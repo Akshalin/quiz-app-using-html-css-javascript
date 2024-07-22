@@ -19,7 +19,7 @@
             color: white;
             border-color: rgba(255, 0, 0, 0.685);
         }
-        .option{
+        .option,.option1,.option2,.option3{
             padding: 10px 380px 10px 5px;
             margin-top: 20px;
             background-color: white;
@@ -35,20 +35,20 @@
         </div>
         <div>
             <div>
-                <button class="red">A</button>
+                <button class="red" onclick="red()">A</button>
                 <button class="option" onclick="red()">Counter Strike:Source</button>
             </div>
             <div>
-                <button class="red">B</button>
-                <button class="option" onclick="red()">Corrective Style Sheet</button>
+                <button class="red" onclick="red1()">B</button>
+                <button class="option1" onclick="red1()">Corrective Style Sheet</button>
             </div>
             <div>
-                <button class="red" onclick="red()">C</button>
-                <button class="option" onclick="red()"> Computer Style Sheet</button>
+                <button class="red" onclick="red2()">C</button>
+                <button class="option2" onclick="red2()"> Computer Style Sheet</button>
             </div>
             <div>
-                <button class="green">D</button>
-                <button class="option" onclick="green()">Cascading Style Sheet</button>
+                <button class="green" onclick="green()">D</button>
+                <button class="option3" onclick="green()">Cascading Style Sheet</button>
             </div>
         </div>
     </div>
@@ -56,8 +56,15 @@
         function red(){
             document.getElementsByClassName("option")[0].style.backgroundColor="rgba(255, 0, 0, 0.753)";
         }
+        function red1(){
+            document.getElementsByClassName("option1")[0].style.backgroundColor="rgba(255, 0, 0, 0.753)";
+        }
+        function red2(){
+            document.getElementsByClassName("option2")[0].style.backgroundColor="rgba(255, 0, 0, 0.753)";
+        }
         function green(){
-            document.getElementsByClassName("option")[3].style.backgroundColor="green";
+            document.getElementsByClassName("option3")[0].style.backgroundColor="green";
+            document.getElementsByClassName("green")[0].style="background-color:green;border-color:green;";
         }
     </script>
 </body>
